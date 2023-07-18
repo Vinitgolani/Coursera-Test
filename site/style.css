@@ -1,0 +1,72 @@
+.Section{
+    border: 1px solid black;
+    display: block;
+    background-color: grey;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position : relative;
+}
+
+div>h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.sectiontitle{
+    position: absolute;
+    border: 1px solid black;
+    top: 0px;
+    right: 0px;
+    padding: 0px 5px 0px 5px;
+}
+.chick{
+    background-color: rgb(217, 103, 133);
+}
+.beef{
+    background-color: rgb(205, 52, 52);
+}
+.sus{
+    background-color: rgb(206, 183, 80);
+}
+
+.row{
+    max-width: 1200px;
+    float: left;
+}
+
+@media only screen and (max-width: 767px) {
+    .Section {
+      width: 100%;
+      float: none;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .Section {
+      width: 48%;
+      margin-right: 4%;
+      float: left;
+    }
+  
+    .Section:nth-child(2) {
+      margin-right: 0;
+    }
+  
+    .Section:nth-child(3) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .Section {
+      width: 30%;
+      margin-right: 4%;
+      float: left;
+    }
+    .Section:last-child {
+      margin-right: 0;
+    }
+  }
+  
